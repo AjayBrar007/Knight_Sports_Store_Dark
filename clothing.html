@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knight Sports Store — Clothing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="genz.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo">Knight <span>Sports Store</span> ⚡</a>
+    <button class="nav-toggle" aria-label="menu"><span></span></button>
+    <nav class="menu">
+      <div class="dropdown"><button class="dropbtn">Products ▾</button>
+        <div class="dropdown-content glass">
+          <a href="shoes.html">👟 Shoes</a>
+          <a href="clothing.html" class="active">👕 Clothing</a>
+          <a href="accessories.html">🎒 Accessories</a>
+          <a href="equipment.html">🏋️ Equipment</a>
+        </div>
+      </div>
+      <a href="sale.html">🔥 Deals</a>
+      <a href="about.html">💡 About</a>
+      <a href="contact.html">📞 Contact</a>
+      <a href="cart.html" id="cartLink">🛒 <span class="cart-badge" id="cartCount">0</span></a>
+      <input id="siteSearch" class="nav-search" type="search" placeholder="Search products…">
+    </nav>
+  </header>
+
+  <!-- BREADCRUMBS -->
+  <nav class="crumbs container" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> › <a href="products.html">Products</a> › <span>Clothing</span>
+  </nav>
+
+  <section class="page-hero">
+    <h1>👕 Clothing</h1>
+    <p class="container" style="color:#cfd6e4">Tops • Bottoms • Jerseys/Jackets</p>
+  </section>
+
+  <div class="container tabs" style="padding-top:16px">
+    <a class="tab glass" href="#tops">Tops</a>
+    <a class="tab glass" href="#bottoms">Bottoms</a>
+    <a class="tab glass" href="#jackets">Jerseys / Jackets</a>
+  </div>
+
+  <!-- TOPS -->
+  <section class="section" id="tops">
+    <div class="container">
+      <h2>Tops</h2>
+      <div class="grid grid--cards">
+        <!-- 2XU Aero Mesh Tee -->
+        <article class="product glass">
+          <img src="images/2XUMen_Aero_Mesh_Tee.jpg" alt="2XU Aero Mesh Tee">
+          <div class="product__body">
+            <h3>2XU Aero Mesh Tee</h3>
+            <p class="muted">Breathable, quick-dry fabric.</p>
+            <div class="price">$45</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="cl-top-1"
+             data-name="2XU Aero Mesh Tee"
+             data-price="45"
+             data-img="images/2XUMen_Aero_Mesh_Tee.jpg" href="#">Add</a>
+        </article>
+
+        <!-- Training Jersey (as a tech top) -->
+        <article class="product glass">
+          <img src="images/training_jersey.jpg" alt="Training Jersey">
+          <div class="product__body">
+            <h3>Training Jersey</h3>
+            <p class="muted">Lightweight training top.</p>
+            <div class="price">$49</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="cl-top-2"
+             data-name="Training Jersey"
+             data-price="49"
+             data-img="images/training_jersey.jpg" href="#">Add</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOMS -->
+  <section class="section" id="bottoms">
+    <div class="container">
+      <h2>Bottoms</h2>
+      <div class="grid grid--cards">
+        <!-- RDX Running Shorts -->
+        <article class="product glass">
+          <img src="images/RDXMenRunningShorts.jpg" alt="RDX Running Shorts">
+          <div class="product__body">
+            <h3>RDX Running Shorts</h3>
+            <p class="muted">Light & fast, secure fit.</p>
+            <div class="price">$39</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="cl-btm-1"
+             data-name="RDX Running Shorts"
+             data-price="39"
+             data-img="images/RDXMenRunningShorts.jpg" href="#">Add</a>
+        </article>
+
+        <!-- Compression Tights (keep a generic item) -->
+        <article class="product glass">
+          <img src="images/PRIMESTY_Personalized_Badminton_Shirts.jpg" alt="Compression Tights" />
+          <div class="product__body">
+            <h3>Compression Tights</h3>
+            <p class="muted">Locked-in support.</p>
+            <div class="price">$69</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="cl-btm-2"
+             data-name="Compression Tights"
+             data-price="69"
+             data-img="images/PRIMESTY_Personalized_Badminton_Shirts.jpg" href="#">Add</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- JERSEYS / JACKETS -->
+  <section class="section" id="jackets">
+    <div class="container">
+      <h2>Jerseys / Jackets</h2>
+      <div class="grid grid--cards">
+        <!-- Joma Honduras Jersey -->
+        <article class="product glass">
+          <img src="images/JomaHondurasAwayJersey.jpg" alt="Joma Honduras Away Jersey">
+          <div class="product__body">
+            <h3>Joma Honduras Jersey</h3>
+            <p class="muted">Match-fit performance fabric.</p>
+            <div class="price">$69</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="cl-jk-1"
+             data-name="Joma Honduras Jersey"
+             data-price="69"
+             data-img="images/JomaHondurasAwayJersey.jpg" href="#">Add</a>
+        </article>
+
+        <!-- Thermo Hoodie (generic jacket) -->
+        <article class="product glass">
+          <img src="images/2XUMen_Aero_Mesh_Tee.jpg" alt="Thermo Hoodie">
+          <div class="product__body">
+            <h3>Thermo Hoodie</h3>
+            <p class="muted">Warmth without bulk.</p>
+            <div class="price">$89</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="cl-jk-2"
+             data-name="Thermo Hoodie"
+             data-price="89"
+             data-img="images/2XUMen_Aero_Mesh_Tee.jpg" href="#">Add</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">© <span data-year></span> Knight Sports Store</footer>
+  <script src="script.js"></script>
+</body>
+</html>

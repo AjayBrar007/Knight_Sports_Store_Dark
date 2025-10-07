@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knight Sports Store — Accessories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="genz.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo">Knight <span>Sports Store</span> ⚡</a>
+    <button class="nav-toggle" aria-label="menu"><span></span></button>
+    <nav class="menu">
+      <div class="dropdown"><button class="dropbtn">Products ▾</button>
+        <div class="dropdown-content glass">
+          <a href="shoes.html">👟 Shoes</a>
+          <a href="clothing.html">👕 Clothing</a>
+          <a href="accessories.html" class="active">🎒 Accessories</a>
+          <a href="equipment.html">🏋️ Equipment</a>
+        </div>
+      </div>
+      <a href="sale.html">🔥 Deals</a>
+      <a href="about.html">💡 About</a>
+      <a href="contact.html">📞 Contact</a>
+      <a href="cart.html" id="cartLink">🛒 <span class="cart-badge" id="cartCount">0</span></a>
+      <input id="siteSearch" class="nav-search" type="search" placeholder="Search products…">
+    </nav>
+  </header>
+
+  <!-- BREADCRUMBS -->
+  <nav class="crumbs container" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> › <a href="products.html">Products</a> › <span>Accessories</span>
+  </nav>
+
+  <section class="page-hero"><h1>🎒 Accessories</h1><p class="container" style="color:#cfd6e4">Bags • Caps • Watches</p></section>
+
+  <div class="container tabs" style="padding-top:16px">
+    <a class="tab glass" href="#bags">Bags</a>
+    <a class="tab glass" href="#caps">Caps</a>
+    <a class="tab glass" href="#watches">Watches</a>
+  </div>
+
+  <!-- BAGS -->
+  <section class="section" id="bags">
+    <div class="container">
+      <h2>Bags</h2>
+      <div class="grid grid--cards">
+        <article class="product glass">
+          <img src="images/Pro-Sports_Waterproof_Backpack.jpg" alt="Pro Sports Waterproof Backpack">
+          <div class="product__body">
+            <h3>Pro Waterproof Backpack</h3>
+            <p class="muted">Tough, water-resistant daily carry.</p>
+            <div class="price">$79</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="acc-bag-1"
+             data-name="Pro Waterproof Backpack"
+             data-price="79"
+             data-img="images/Pro-Sports_Waterproof_Backpack.jpg" href="#">Add</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPS -->
+  <section class="section" id="caps">
+    <div class="container">
+      <h2>Caps</h2>
+      <div class="grid grid--cards">
+        <article class="product glass">
+          <!-- NOTE: filename has no spaces -->
+          <img src="images/adidasMenSuperlite3TrainingCap.jpg" alt="Adidas Superlite 3 Training Cap">
+          <div class="product__body">
+            <h3>Adidas Superlite Training Cap</h3>
+            <p class="muted">Ventilated, moisture-wicking.</p>
+            <div class="price">$29</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="acc-cap-1"
+             data-name="Adidas Superlite Training Cap"
+             data-price="29"
+             data-img="images/adidasMenSuperlite3TrainingCap.jpg" href="#">Add</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WATCHES -->
+  <section class="section" id="watches">
+    <div class="container">
+      <h2>Sport Watches</h2>
+      <div class="grid grid--cards">
+        <article class="product glass">
+          <img src="images/GarminForerunner970.jpg" alt="Garmin Forerunner 970 GPS Watch">
+          <div class="product__body">
+            <h3>Garmin Forerunner 970</h3>
+            <p class="muted">Advanced GPS training metrics.</p>
+            <div class="price">$399</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="acc-watch-1"
+             data-name="Garmin Forerunner 970"
+             data-price="399"
+             data-img="images/GarminForerunner970.jpg" href="#">Add</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">© <span data-year></span> Knight Sports Store</footer>
+  <script src="script.js"></script>
+</body>
+</html>

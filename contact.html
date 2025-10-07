@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HYPE SPORT — Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="genz.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo">HYPE<span>SPORT</span> ⚡</a>
+    <button class="nav-toggle" aria-label="menu"><span></span></button>
+    <nav class="menu">
+      <div class="dropdown"><button class="dropbtn">Products ▾</button>
+        <div class="dropdown-content">
+          <a href="products.html">All Products</a><a href="shoes.html">👟 Shoes</a>
+          <a href="clothing.html">👕 Clothing</a><a href="accessories.html">🎒 Accessories</a>
+          <a href="equipment.html">🏋️ Equipment</a>
+        </div>
+      </div>
+      <a href="sale.html">🔥 Deals</a><a href="about.html">💡 About</a><a href="contact.html">📞 Contact</a>
+    </nav>
+  </header>
+
+  <section class="page-hero"><h1>Contact & Support</h1><p class="container" style="color:#cfd6e4">Sizing, orders, warranties — we got you.</p></section>
+
+  <section class="section">
+    <div class="container grid" style="grid-template-columns:1.1fr .9fr;gap:20px">
+      <div class="card" style="background:#12141a">
+        <div class="card__body">
+          <h3>Send us a message</h3>
+          <form class="form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" required placeholder="Your full name"><small class="error">Enter your name.</small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com"><small class="error">Enter a valid email.</small>
+            </div>
+            <div class="field">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic" required>
+                <option value="">Choose a topic…</option>
+                <option>Order Help</option><option>Warranty</option><option>Sizing & Fit</option><option>Wholesale</option>
+              </select>
+              <small class="error">Select a topic.</small>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+              <small class="error">Please include a message.</small>
+            </div>
+            <button class="btn" type="submit">Send Message</button>
+            <p class="form__success" role="status" aria-live="polite">Thanks! We’ll reply within 1 business day.</p>
+          </form>
+        </div>
+      </div>
+
+      <div class="grid" style="gap:14px">
+        <div class="card"><div class="card__body"><h4>Support</h4><p class="muted">support@hypesport.example<br>+1 (604) 555-0147</p></div></div>
+        <div class="card"><div class="card__body"><h4>Hours</h4><p class="muted">Mon–Fri 9:00–17:00 PT</p></div></div>
+        <img class="hero-img" src="https://images.unsplash.com/photo-1529927066849-66e1f3f04021?q=80&w=1400&auto=format&fit=crop" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">© <span data-year></span> HYPESPORT</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knight Sports Store — Cart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="genz.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="navbar">
+    <a href="index.html" class="logo">Knight <span>Sports Store</span> ⚡</a>
+    <button class="nav-toggle" aria-label="menu"><span></span></button>
+    <nav class="menu">
+      <div class="dropdown"><button class="dropbtn">Products ▾</button>
+        <div class="dropdown-content glass">
+          <a href="products.html">All Products</a><a href="shoes.html">👟 Shoes</a>
+          <a href="clothing.html">👕 Clothing</a><a href="accessories.html">🎒 Accessories</a>
+          <a href="equipment.html">🏋️ Equipment</a>
+        </div>
+      </div>
+      <a href="sale.html">🔥 Deals</a><a href="about.html">💡 About</a><a href="contact.html">📞 Contact</a>
+      <a href="cart.html" id="cartLink">🛒 <span class="cart-badge" id="cartCount">0</span></a>
+    </nav>
+  </header>
+
+  <section class="page-hero"><h1>Your Cart</h1><p class="container" style="color:#cfd6e4">Review items and checkout</p></section>
+
+  <section class="section">
+    <div class="container cart-wrap">
+      <div class="cart-list" id="cartList"></div>
+
+      <aside class="glass" style="padding:16px;border-radius:22px">
+        <h3>Order Summary</h3>
+        <div class="totals">
+          <div class="row"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+          <div class="row"><span>Tax (12%)</span><strong id="tax">$0.00</strong></div>
+          <hr style="border:0;border-top:1px solid #242834;margin:10px 0">
+          <div class="row"><span>Total</span><strong id="total">$0.00</strong></div>
+        </div>
+        <a class="btn checkout" href="#">Checkout</a>
+        <p class="muted" style="margin-top:8px">Demo only — no real payment.</p>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="footer">© <span data-year></span> Knight Sports Store</footer>
+  <script src="script.js"></script>
+</body>
+</html>

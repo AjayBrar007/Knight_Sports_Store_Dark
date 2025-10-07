@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knight Sports Store — Shoes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="genz.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo">Knight <span>Sports Store</span> ⚡</a>
+    <button class="nav-toggle" aria-label="menu"><span></span></button>
+    <nav class="menu">
+      <div class="dropdown"><button class="dropbtn">Products ▾</button>
+        <div class="dropdown-content glass">
+          <a href="shoes.html" class="active">👟 Shoes</a>
+          <a href="clothing.html">👕 Clothing</a><a href="accessories.html">🎒 Accessories</a>
+          <a href="equipment.html">🏋️ Equipment</a>
+        </div>
+      </div>
+      <a href="sale.html">🔥 Deals</a><a href="about.html">💡 About</a><a href="contact.html">📞 Contact</a>
+      <a href="cart.html" id="cartLink">🛒 <span class="cart-badge" id="cartCount">0</span></a>
+      <input id="siteSearch" class="nav-search" type="search" placeholder="Search products…">
+    </nav>
+  </header>
+
+  <nav class="crumbs container" aria-label="Breadcrumb"> <a href="index.html">Home</a> › <a href="products.html">Products</a> › <span>Shoes</span> </nav>
+
+  <section class="page-hero"><h1>👟 Shoes</h1><p class="container" style="color:#cfd6e4">Running • Training • Lifestyle</p></section>
+
+  <div class="container tabs">
+    <a class="tab glass" href="#running">Running</a>
+    <a class="tab glass" href="#training">Training</a>
+    <a class="tab glass" href="#lifestyle">Lifestyle</a>
+  </div>
+
+  <section class="section" id="running">
+    <div class="container">
+      <h2>Running</h2>
+      <div class="grid grid--cards">
+        <article class="product glass">
+          <img src="images/NikeSneakerRunningShoes.jpg" alt="">
+          <div class="product__body"><h3>Nike Runner</h3><p class="muted">Everyday miles.</p><div class="price">$129</div></div>
+          <a class="quick-add" data-add data-id="s1" data-name="Nike Runner" data-price="129" data-img="images/NikeSneakerRunningShoes.jpg" href="#">Add</a>
+        </article>
+        <article class="product glass">
+          <img src="images/YonexPowerCushion65Z4.jpg" alt="">
+          <div class="product__body"><h3>PowerCushion 6574</h3><p class="muted">Cushion & grip.</p><div class="price">$139</div></div>
+          <a class="quick-add" data-add data-id="s2" data-name="PowerCushion 65Z4" data-price="139" data-img="images/YonexPowerCushion65Z4.jpg" href="#">Add</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="training">
+    <div class="container">
+      <h2>Training</h2>
+      <div class="grid grid--cards">
+        <article class="product glass">
+          <img src="images/adidasAdizeroFootballShoe.jpg" alt="">
+          <div class="product__body"><h3>Adizero Football</h3><p class="muted">Explosive speed.</p><div class="price">$159</div></div>
+          <a class="quick-add" data-add data-id="s3" data-name="Adizero Football" data-price="159" data-img="images/adidasAdizeroFootballShoe.jpg" href="#">Add</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="lifestyle">
+    <div class="container">
+      <h2>Lifestyle</h2>
+      <div class="grid grid--cards">
+        <article class="product glass">
+          <img src="images/training_jersey.jpg" alt="">
+          <div class="product__body"><h3>StreetFlex</h3><p class="muted">All-day comfort.</p><div class="price">$119</div></div>
+          <a class="quick-add" data-add data-id="s4" data-name="StreetFlex" data-price="119" data-img="images/training_jersey.jpg" href="#">Add</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">© <span data-year></span> Knight Sports Store</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knight Sports Store — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="genz.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="navbar">
+    <a href="index.html" class="logo">Knight <span>Sports Store</span> ⚡</a>
+    <button class="nav-toggle" aria-label="menu"><span></span></button>
+    <nav class="menu">
+      <div class="dropdown">
+        <button class="dropbtn">Products ▾</button>
+        <div class="dropdown-content glass">
+          <a href="shoes.html">👟 Shoes</a>
+          <a href="clothing.html">👕 Clothing</a>
+          <a href="accessories.html">🎒 Accessories</a>
+          <a href="equipment.html">🏋️ Equipment</a>
+        </div>
+      </div>
+      <a href="sale.html">🔥 Deals</a><a href="about.html">💡 About</a><a href="contact.html">📞 Contact</a>
+      <a href="cart.html" id="cartLink">🛒 <span class="cart-badge" id="cartCount">0</span></a>
+      <a class="btn btn--ghost" href="#all-sections">Explore All ↓</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__wrap">
+      <div>
+        <h1>Level Up Your <span>Game</span> 🚀</h1>
+        <p>Pro-grade shoes, clothing, and gear — built for performance.</p>
+        <div style="margin-top:14px">
+          <a class="btn" href="products.html">Shop the Drop</a>
+          <a class="btn btn--ghost" href="sale.html" style="margin-left:10px">View Deals</a>
+        </div>
+      </div>
+      <img class="hero-img" src="images/NikeSneakerRunningShoes.jpg" alt="Sneaker mid air">
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section" id="all-sections">
+    <div class="container">
+      <div class="kicker">⚡ Trending Categories</div>
+      <h2>Find your next upgrade</h2>
+      <div class="grid grid--cards" style="margin-top:14px">
+        <a class="card glass" href="#sec-shoes">
+          <img src="images/YonexPowerCushion65Z4.jpg" alt="Shoes">
+          <div class="card__body"><h3>👟 Shoes</h3><span class="tag">Run • Train • Street</span></div>
+        </a>
+        <a class="card glass" href="#sec-clothing">
+          <img src="images/2XUMen_Aero_Mesh_Tee.jpg" alt="Clothing">
+          <div class="card__body"><h3>👕 Clothing</h3><span class="tag">Dry • Flex • Warm</span></div>
+        </a>
+        <a class="card glass" href="#sec-accessories">
+          <img src="images/Pro-Sports_Waterproof_Backpack.jpg" alt="Accessories">
+          <div class="card__body"><h3>🎒 Accessories</h3><span class="tag">Bags • Caps • Socks</span></div>
+        </a>
+        <a class="card glass" href="#sec-equipment">
+          <img src="images/Pro_Agility_Ladder.jpg" alt="Equipment">
+          <div class="card__body"><h3>🏋️ Equipment</h3><span class="tag">Home & Gym</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL-IN-ONE SECTIONS (scrollable) -->
+  <section class="section" id="sec-shoes">
+    <div class="container">
+      <div class="kicker">👟 Shoes</div><h2>Run faster. Train harder.</h2>
+      <div class="grid grid--cards">
+        <article class="product glass">
+          <img src="images/YonexPowerCushion65Z4.jpg" alt="">
+          <div class="product__body"><h3>PowerCushion 6574</h3><p class="muted">Cushion & grip.</p><div class="price">$139</div></div>
+          <a class="quick-add" data-add data-id="sh1" data-name="PowerCushion 6574" data-price="139" data-img="images/YonexPowerCushion65Z4.jpg" href="#">Add</a>
+        </article>
+        <article class="product glass">
+          <img src="images/NikeSneakerRunningShoes.jpg" alt="">
+          <div class="product__body"><h3>Nike Runner</h3><p class="muted">Everyday miles.</p><div class="price">$129</div></div>
+          <a class="quick-add" data-add data-id="sh2" data-name="Nike Runner" data-price="129" data-img="images/NikeSneakerRunningShoes.jpg" href="#">Add</a>
+        </article>
+        <article class="product glass">
+          <img src="images/adidasAdizeroFootballShoe.jpg" alt="">
+          <div class="product__body"><h3>Adizero Football</h3><p class="muted">Explosive speed.</p><div class="price">$159</div></div>
+          <a class="quick-add" data-add data-id="sh3" data-name="Adizero Football" data-price="159" data-img="images/adidasAdizeroFootballShoe.jpg" href="#">Add</a>
+        </article>
+      </div>
+      <p style="margin-top:10px"><a class="btn btn--ghost" href="shoes.html">View all Shoes →</a></p>
+    </div>
+  </section>
+
+  <section class="section" id="sec-clothing">
+    <div class="container">
+      <div class="kicker">👕 Clothing</div><h2>Technical threads</h2>
+      <div class="grid grid--cards">
+        <article class="product glass">
+          <img src="images/2XUMen_Aero_Mesh_Tee.jpg" alt="">
+          <div class="product__body"><h3>2XU Aero Mesh Tee</h3><p class="muted">Breathable.</p><div class="price">$45</div></div>
+          <a class="quick-add" data-add data-id="cl1" data-name="2XU Aero Mesh Tee" data-price="45" data-img="images/2XUMen_Aero_Mesh_Tee.jpg" href="#">Add</a>
+        </article>
+        <article class="product glass">
+          <img src="images/RDXMenRunningShorts.jpg" alt="">
+          <div class="product__body"><h3>RDX Running Shorts</h3><p class="muted">Light & fast.</p><div class="price">$39</div></div>
+          <a class="quick-add" data-add data-id="cl2" data-name="RDX Running Shorts" data-price="39" data-img="images/RDXMenRunningShorts.jpg" href="#">Add</a>
+        </article>
+        <article class="product glass">
+          <img src="images/JomaHondurasAwayJersey.jpg" alt="">
+          <div class="product__body"><h3>Joma Honduras Jersey</h3><p class="muted">Match fit.</p><div class="price">$69</div></div>
+          <a class="quick-add" data-add data-id="cl3" data-name="Joma Honduras Jersey" data-price="69" data-img="images/JomaHondurasAwayJersey.jpg" href="#">Add</a>
+        </article>
+      </div>
+      <p style="margin-top:10px"><a class="btn btn--ghost" href="clothing.html">View all Clothing →</a></p>
+    </div>
+  </section>
+
+  <section class="section" id="sec-accessories">
+    <div class="container">
+      <div class="kicker">🎒 Accessories</div><h2>Dial in the details</h2>
+      <div class="grid grid--cards">
+        <article class="product glass">
+          <img src="images/Pro-Sports_Waterproof_Backpack.jpg" alt="">
+          <div class="product__body"><h3>Waterproof Backpack</h3><p class="muted">All-weather.</p><div class="price">$79</div></div>
+          <a class="quick-add" data-add data-id="ac1" data-name="Waterproof Backpack" data-price="79" data-img="images/Pro-Sports_Waterproof_Backpack.jpg" href="#">Add</a>
+        </article>
+        <article class="product glass">
+          <img src="images/adidasMenSuperlite3TrainingCap.jpg" alt="">
+          <div class="product__body"><h3>Adidas Training Cap</h3><p class="muted">Ventilated.</p><div class="price">$29</div></div>
+          <a class="quick-add" data-add data-id="ac2" data-name="Adidas Training Cap" data-price="29" data-img="images/adidasMenSuperlite3TrainingCap.jpg" href="#">Add</a>
+        </article>
+        <article class="product glass">
+          <img src="images/GarminForerunner970.jpg" alt="">
+          <div class="product__body"><h3>Garmin Forerunner 970</h3><p class="muted">GPS watch.</p><div class="price">$399</div></div>
+          <a class="quick-add" data-add data-id="ac3" data-name="Garmin Forerunner 970" data-price="399" data-img="images/GarminForerunner970.jpg" href="#">Add</a>
+        </article>
+      </div>
+      <p style="margin-top:10px"><a class="btn btn--ghost" href="accessories.html">View all Accessories →</a></p>
+    </div>
+  </section>
+
+  <section class="section" id="sec-equipment">
+    <div class="container">
+      <div class="kicker">🏋️ Equipment</div><h2>Train anywhere</h2>
+      <div class="grid grid--cards">
+        <article class="product glass">
+          <img src="images/Pro_Agility_Ladder.jpg" alt="">
+          <div class="product__body"><h3>Agility Ladder</h3><p class="muted">Footwork.</p><div class="price">$39</div></div>
+          <a class="quick-add" data-add data-id="eq1" data-name="Agility Ladder" data-price="39" data-img="images/Pro_Agility_Ladder.jpg" href="#">Add</a>
+        </article>
+        <article class="product glass">
+          <img src="images/WIKDAY_Resistance_Band.jpg" alt="">
+          <div class="product__body"><h3>Resistance Bands</h3><p class="muted">Full-body.</p><div class="price">$25</div></div>
+          <a class="quick-add" data-add data-id="eq2" data-name="Resistance Bands" data-price="25" data-img="images/WIKDAY_Resistance_Band.jpg" href="#">Add</a>
+        </article>
+        <article class="product glass">
+          <img src="images/Yonex_ASTROX_100ZZ_Badminton_Racquet.jpg" alt="">
+          <div class="product__body"><h3>ASTROX 100ZZ</h3><p class="muted">Badminton racquet.</p><div class="price">$219</div></div>
+          <a class="quick-add" data-add data-id="eq3" data-name="ASTROX 100ZZ" data-price="219" data-img="images/Yonex_ASTROX_100ZZ_Badminton_Racquet.jpg" href="#">Add</a>
+        </article>
+      </div>
+      <p style="margin-top:10px"><a class="btn btn--ghost" href="equipment.html">View all Equipment →</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">© <span data-year></span> Knight Sports Store</footer>
+  <script src="script.js"></script>
+</body>
+</html>

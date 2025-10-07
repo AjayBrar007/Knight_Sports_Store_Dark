@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knight Sports Store — Equipment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="genz.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="logo">Knight <span>Sports Store</span> ⚡</a>
+    <button class="nav-toggle" aria-label="menu"><span></span></button>
+    <nav class="menu">
+      <div class="dropdown"><button class="dropbtn">Products ▾</button>
+        <div class="dropdown-content glass">
+          <a href="shoes.html">👟 Shoes</a>
+          <a href="clothing.html">👕 Clothing</a>
+          <a href="accessories.html">🎒 Accessories</a>
+          <a href="equipment.html" class="active">🏋️ Equipment</a>
+        </div>
+      </div>
+      <a href="sale.html">🔥 Deals</a>
+      <a href="about.html">💡 About</a>
+      <a href="contact.html">📞 Contact</a>
+      <a href="cart.html" id="cartLink">🛒 <span class="cart-badge" id="cartCount">0</span></a>
+      <input id="siteSearch" class="nav-search" type="search" placeholder="Search products…">
+    </nav>
+  </header>
+
+  <!-- BREADCRUMBS -->
+  <nav class="crumbs container" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> › <a href="products.html">Products</a> › <span>Equipment</span>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>🏋️ Equipment</h1>
+    <p class="container" style="color:#cfd6e4">Training aids, recovery tools, and field gear.</p>
+  </section>
+
+  <!-- TABS (anchors) -->
+  <div class="container tabs" style="padding-top:16px">
+    <a class="tab glass" href="#training-aids">Training Aids</a>
+    <a class="tab glass" href="#recovery">Recovery</a>
+    <a class="tab glass" href="#field-gear">Field Gear</a>
+    <a class="tab glass" href="#tech">Tech</a>
+  </div>
+
+  <!-- SECTION: Training Aids -->
+  <section class="section" id="training-aids">
+    <div class="container">
+      <h2>Training Aids</h2>
+      <div class="grid grid--cards">
+        <!-- Agility Ladder -->
+        <article class="product glass">
+          <img src="images/Pro_Agility_Ladder.jpg" alt="Agility Ladder">
+          <div class="product__body">
+            <h3>Pro Agility Ladder</h3>
+            <p class="muted">Footwork & speed drills.</p>
+            <div class="price">$39</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="eq-agl-1"
+             data-name="Pro Agility Ladder"
+             data-price="39"
+             data-img="images/Pro_Agility_Ladder.jpg" href="#">Add</a>
+        </article>
+
+        <!-- Resistance Bands -->
+        <article class="product glass">
+          <img src="images/WIKDAY_Resistance_Band.jpg" alt="Resistance Bands">
+          <div class="product__body">
+            <h3>WIKDAY Resistance Bands</h3>
+            <p class="muted">Full-body portable training.</p>
+            <div class="price">$25</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="eq-rb-1"
+             data-name="WIKDAY Resistance Bands"
+             data-price="25"
+             data-img="images/WIKDAY_Resistance_Band.jpg" href="#">Add</a>
+        </article>
+
+        <!-- FINIS Temp Trainer (metronome) -->
+        <article class="product glass">
+          <img src="images/FINIS_Temp_Trainer.jpg" alt="FINIS Temp Trainer">
+          <div class="product__body">
+            <h3>FINIS Temp Trainer</h3>
+            <p class="muted">Cadence metronome for pace.</p>
+            <div class="price">$49</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="eq-tt-1"
+             data-name="FINIS Temp Trainer"
+             data-price="49"
+             data-img="images/FINIS_Temp_Trainer.jpg" href="#">Add</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Recovery -->
+  <section class="section" id="recovery">
+    <div class="container">
+      <h2>Recovery</h2>
+      <div class="grid grid--cards">
+        <!-- Shin Guards (protective/recovery) -->
+        <article class="product glass">
+          <img src="images/BodyproxSoccerShin.jpg" alt="Bodyprox Shin Guards">
+          <div class="product__body">
+            <h3>Bodyprox Shin Guards</h3>
+            <p class="muted">Impact protection for practice.</p>
+            <div class="price">$32</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="eq-shin-1"
+             data-name="Bodyprox Shin Guards"
+             data-price="32"
+             data-img="images/BodyproxSoccerShin.jpg" href="#">Add</a>
+        </article>
+
+        <!-- Resistance bands can also be recovery: duplicate as variant if desired -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Field Gear -->
+  <section class="section" id="field-gear">
+    <div class="container">
+      <h2>Field Gear</h2>
+      <div class="grid grid--cards">
+        <!-- Football -->
+        <article class="product glass">
+          <img src="images/football.jpg" alt="Training Football">
+          <div class="product__body">
+            <h3>Training Football</h3>
+            <p class="muted">Durable match & practice ball.</p>
+            <div class="price">$29</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="eq-ball-1"
+             data-name="Training Football"
+             data-price="29"
+             data-img="images/football.jpg" href="#">Add</a>
+        </article>
+
+        <!-- Badminton Racquet -->
+        <article class="product glass">
+          <img src="images/Yonex_ASTROX_100ZZ_Badminton_Racquet.jpg" alt="ASTROX 100ZZ Racquet">
+          <div class="product__body">
+            <h3>Yonex ASTROX 100ZZ</h3>
+            <p class="muted">Head-heavy power & control.</p>
+            <div class="price">$219</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="eq-rac-1"
+             data-name="Yonex ASTROX 100ZZ"
+             data-price="219"
+             data-img="images/Yonex_ASTROX_100ZZ_Badminton_Racquet.jpg" href="#">Add</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Tech -->
+  <section class="section" id="tech">
+    <div class="container">
+      <h2>Tech</h2>
+      <div class="grid grid--cards">
+        <!-- Garmin Watch (tech equipment) -->
+        <article class="product glass">
+          <img src="images/GarminForerunner970.jpg" alt="Garmin Forerunner 970">
+          <div class="product__body">
+            <h3>Garmin Forerunner 970</h3>
+            <p class="muted">GPS metrics for training.</p>
+            <div class="price">$399</div>
+          </div>
+          <a class="quick-add"
+             data-add data-id="eq-gar-1"
+             data-name="Garmin Forerunner 970"
+             data-price="399"
+             data-img="images/GarminForerunner970.jpg" href="#">Add</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">© <span data-year></span> Knight Sports Store</footer>
+  <script src="script.js"></script>
+</body>
+</html>

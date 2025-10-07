@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knight Sports Store — Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="genz.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="navbar">
+    <a href="index.html" class="logo">Knight <span>Sports Store</span> ⚡</a>
+    <button class="nav-toggle" aria-label="menu"><span></span></button>
+    <nav class="menu">
+      <div class="dropdown"><button class="dropbtn">Products ▾</button>
+        <div class="dropdown-content glass">
+          <a href="products.html">All Products</a><a href="shoes.html">👟 Shoes</a>
+          <a href="clothing.html">👕 Clothing</a><a href="accessories.html">🎒 Accessories</a>
+          <a href="equipment.html">🏋️ Equipment</a>
+        </div>
+      </div>
+      <a href="sale.html">🔥 Deals</a><a href="about.html">💡 About</a><a href="contact.html">📞 Contact</a>
+      <a href="cart.html" id="cartLink">🛒 <span class="cart-badge" id="cartCount">0</span></a>
+      <input id="siteSearch" class="nav-search" type="search" placeholder="Search products…">
+    </nav>
+  </header>
+
+  <section class="page-hero"><h1>All Products</h1><p class="container" style="color:#cfd6e4">Jump to a category:</p></section>
+
+  <div class="container tabs" style="padding:16px 0 0">
+    <a class="tab glass" href="shoes.html">Shoes</a>
+    <a class="tab glass" href="clothing.html">Clothing</a>
+    <a class="tab glass" href="accessories.html">Accessories</a>
+    <a class="tab glass" href="equipment.html">Equipment</a>
+  </div>
+
+  <section class="section">
+    <div class="container grid grid--cards">
+      <article class="product glass">
+        <img src="images/YonexPowerCushion6574.jpg" alt="">
+        <div class="product__body"><h3>PowerCushion 6574</h3><p class="muted">Cushion & grip.</p><div class="price">$139</div></div>
+        <a class="quick-add" data-add data-id="p1" data-name="PowerCushion 6574" data-price="139" data-img="images/YonexPowerCushion6574.jpg" href="#">Add</a>
+      </article>
+      <article class="product glass">
+        <img src="images/Pro-Sports_Waterproof_Backpack.jpg" alt="">
+        <div class="product__body"><h3>Waterproof Backpack</h3><p class="muted">All-weather.</p><div class="price">$79</div></div>
+        <a class="quick-add" data-add data-id="p2" data-name="Waterproof Backpack" data-price="79" data-img="images/Pro-Sports_Waterproof_Backpack.jpg" href="#">Add</a>
+      </article>
+      <article class="product glass">
+        <img src="images/2XUMen_Aero_Mesh_Tee.jpg" alt="">
+        <div class="product__body"><h3>2XU Aero Mesh Tee</h3><p class="muted">Breathable.</p><div class="price">$45</div></div>
+        <a class="quick-add" data-add data-id="p3" data-name="2XU Aero Mesh Tee" data-price="45" data-img="images/2XUMen_Aero_Mesh_Tee.jpg" href="#">Add</a>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">© <span data-year></span> Knight Sports Store</footer>
+  <script src="script.js"></script>
+</body>
+</html>
